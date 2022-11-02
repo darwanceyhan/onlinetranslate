@@ -1,0 +1,196 @@
+body{background-image: url('background_translate_x2.png');
+background-position: center;}
+#transactions{
+
+
+    animation-name: animation1;
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    
+    position: relative;
+
+}
+
+@keyframes animation1 {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+
+}
+
+
+
+#mainpage {
+    animation-name: animation1;
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    
+    position: relative;
+}
+
+#level_2, #btnnext,#contact_1{
+    animation-name: animation1;
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    
+    position: relative;
+}
+
+
+#info{
+    animation-name: animation1;
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    position: relative;
+}
+
+#fee{animation-name: animation2;
+
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    position: relative;
+
+}
+
+
+@keyframes animation2 {
+    from {
+        right: -100px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+
+}
+
+
+#prcselect{
+    animation-name: animation3;
+    animation-fill-mode: initial;
+    animation-duration: 2s;
+    position: relative;
+}
+
+
+@keyframes animation3 {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+
+}
+#credit {
+	animation-name:ani1;
+    position:relative;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes ani1{
+	from{transform:rotateX(-90deg);opacity:0;}
+    to {transform:rotateX(0deg);opacity:1;}
+
+}
+#btn{
+    transition: 1s;
+    
+}
+#btn:hover{
+    
+        background-color: #493268;
+        transition-duration: 0.5s;
+        transform: scale(1.1,1.1);
+        
+        
+        transition-property: inherit;   
+        
+
+}
+
+#btn2{
+    transition: 1s;
+}
+#btn2:hover{
+        background-color: #493268;
+        transition-duration: 0.5s;
+        transform-origin: bottom right 50px;
+        color: white;
+        transform: rotateX(20deg);
+        transform: rotateY(30deg);
+        transition-property: inherit;
+       
+        
+
+}
+#div1,#div2,#div3,#upload3{
+   transition: 0.5s;
+}
+
+#div1:hover,#div2:hover,#div3:hover,#upload3:hover{
+
+    transform: perspective(200px) translateY(-15px);
+    
+
+    transition-duration: 0.5s;
+    transition-property: inherit;
+    
+ 
+}
+
+.btn1{
+    animation-name: styling;
+    animation-duration: 0.5s;
+    position: relative;
+}
+
+.btn2{
+    animation-name: styling;
+    animation-duration: 1.25s;
+    
+    
+}
+
+
+.btn3{
+    animation-name: styling;
+    animation-duration: 1.75s;
+   
+    
+}
+
+.btn4{
+    animation-name: styling;
+    animation-duration: 2.25s;
+ 
+    
+}
+
+
+.btn5{
+    animation-name: styling;
+    animation-duration: 2.75s;
+
+}
+#iban{
+    animation-name: styling;
+    animation-duration: 0.25s;
+}
+
+@keyframes styling{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

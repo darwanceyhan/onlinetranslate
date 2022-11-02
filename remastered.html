@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="icon" href="language-solid.svg" type="image/icon type">
+  <script src="https://kit.fontawesome.com/ee2593d4dd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="remastered1.css">
+</head>
+
+<body style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ">
+
+  <nav class="navbar navbar-expand pb-3 sticky-top" style="background-color:  #493268;">
+    <div class="container-fluid mt-2">
+      <a class="navbar-brand d-flex justify-content-start" onclick="openMainpage();" type="button">
+        <h6 class="text-white"><i class="fa-solid fa-language" style=" margin-right: 20px;"></i>ONLİNE ÇEVİRİ</h6>
+      </a>
+      <div class="d-flex justify-content-end">
+        <a class="navbar-brand" href="#">
+          <h6 class="text-white" style="font-size: 11px;">HİZMETLERİMİZ</h6>
+        </a>
+        <a class="navbar-brand" onclick="openContact1(),document.getElementById('contact_1').scrollIntoView();"
+          type="button">
+          <h6 class="text-white" style="font-size: 11px;">İLETİŞİM</h6>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-12 text-center mt-5">
+        <h1>ONLİNE ÇEVİRİ</h1>
+      </div>
+      <div class="col-sm-12 text-center mt-2">
+        <h3>Profesyonel Döküman Çeviri Hizmeti</h3>
+      </div>
+      <div class="col-sm-12 text-center mt-3 mb-5"><button id="btn" class="btn text-white" style="background-color:#493268;"
+          onclick="divHidden4(),document.getElementById('transactions').scrollIntoView();">HEMEN FİYAT AL</button></div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5" id="mainpage">
+    <div class="row mx-auto">
+      <div class="col-sm-6 mt-4 text-break">
+        <h1>En iyisi için çalışıyoruz!</h1> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div class="col-sm-6 mt-4"><img class="img-fluid img-thumbnail" src="https://picsum.photos/id/2/300/200"
+          style="border-radius: 15px;" alt=""></div>
+      <div class="col-sm-6 mt-4 text-break">
+        <h1>Hızlı Çeviri!</h1> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ad.
+      </div>
+      <div class="col-sm-6 mt-4"><img class="img-fluid img-thumbnail" src="https://picsum.photos/id/5/300/200"
+          style="border-radius: 15px;" alt=""></div>
+      <div class="col-sm-6 mt-4 text-break">
+        <h1>Fiyat Performans!</h1> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae!
+      </div>
+      <div class="col-sm-6 mt-4"><img class="img-fluid img-thumbnail" src="https://picsum.photos/id/7/300/200"
+          style="border-radius: 15px;" alt=""></div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container mt-5 d-none" id="contact_1">
+    <div class="row">
+      <div class="col-sm-6 mt-5">
+        <h1>Görüş ve önerileriniz bizim için oldukça <br>değerli... <br>
+          Bizimle İletişime geçmekten çekinmeyin!</h1>
+      </div>
+      <div class="col-sm-6 mt-5 text-center"><img class="img-fluid w-25" src="1054005.png" alt=""></div>
+      
+      <div class="col-sm-6">
+      <div class="col-sm-8 mt-5">
+        <div class="input-group">
+          <span class="input-group-text">İsim & Soyisim</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <br><br>
+        <div class="input-group mb-3">
+          <span class="input-group-text">E-mail:</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+        <br>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Konu</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-text">Mesaj</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div> <button type="button" id="btn" class="btn mx-auto mt-4"
+          style="background-color: #493268;color: white; padding-top: 15px;padding-bottom: 15px; width: 200px;"><i
+            class="fa-solid fa-paper-plane"></i> MESAJINIZI İLETİN</button>
+
+      </div>
+    </div>
+
+      <div class="col-sm-6 mt-5 mx-auto">
+        <h1>Aceleniz mi var ?</h1>
+        <h1>Bize daha hızlı ulaşın!</h1>
+        <br>
+        <h5> <i class="fa-solid fa-phone"></i> <a href="tel:+905333333333"
+            style="text-decoration:none; color:#34495e ">+905333333333</a></h5>
+        <br>
+        <h5> <i class="fa-solid fa-envelope"></i> <a href="mailto:example@mail.com"
+            style="text-decoration: none; color:#34495e ">example@mail.com</a></h5>
+        <br>
+        <h5><i class="fa-solid fa-location-dot"></i> <a href="" style="text-decoration: none;color:#34495e ">Atatürk
+            Bulvarı No:185 kat:5 06680 <br>Kavaklıdere,Ankara</a></h5>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5 pb-3 d-none" id="transactions">
+    <div class="row" >
+      <div id="div1" type="button" onclick="openlevel1() " class="col-sm-4 text-center text-white opacity-100" style="background-color:#493268;"><br>
+        <h2>1</h2><br>
+        <h4>YÜKLE</h4><br>
+        <h6>Yüklemek istediğiniz dosyayı yükleyiniz</h6>
+      </div>
+      <div id="div2" type="button" onclick="openlevel2()" class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
+        <h2>2</h2><br>
+        <h4>FİYATLANDIRMA</h4><br>
+        <h6>Anında fiyat ve teslim bilgisi alın</h6>
+      </div>
+      <div id="div3" type="button" onclick="openlevel3(),addfastcheck();" class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
+        <h2>3</h2><br>
+        <h4>ÖDEME</h4><br>
+        <h6>Ödemenizi tamamlayın hemen başlayalım</h6>
+      </div>
+    </div>
+
+
+    <div class="row mt-5 d-none" id="upload">
+      <div class="col-sm-12 input-group mb-3 mx-auto">
+        <input type="file" class="form-control" id="inputGroupFile02" accept=".doc,.txt" multiple>
+        <label type="button" class="input-group-text" for="inputGroupFile02" id="upload3"><i class="fa-solid fa-file-arrow-up"></i></label>
+      </div>
+    </div>
+
+    <div class="row mb-3 d-none" id="level_1">
+      <div class="col-6 mx-auto">
+        <select id="opt1" class="form-select w-100" onclick="selectlng(),controllang();"   aria-label="Default select example">
+          <option selected>Metin dili</option>
+          <option value="1">İngilizce</option>
+          <option value="2">Almanca</option>
+          <option value="3">Fransızca</option>
+          <option value="4">İtalyanca</option>
+        </select></div>
+      <div class="col-6 mx-auto">
+        <select id="opt2" onclick="selectlng2(),controllang();" class="form-select w-100" aria-label="Default select example">
+          <option selected>Çevrilecek dil</option>
+          <option value="1">İngilizce</option>
+          <option value="2">Almanca</option>
+          <option value="3">Fransızca</option>
+          <option value="4">İtalyanca</option>
+        </select></div>
+
+    </div>
+    <div class="row mt-5 mb-2 d-none" id="btn1">
+      <div class="col-sm-12 text-end">
+        <button type="button" onclick="divHidden5();" id="btn" class="btn text-white" style="background-color:#493268">Sonraki
+          adım</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="row d-none" id="level_2">
+      <div class="col-sm-6 mx-auto  card text-black" style="width: 18rem; margin-top: 10%;">
+
+        <div class="card-body" style="text-align: center;">
+          <h3 class="card-title" style="opacity: 0.5;">STANDART</h3><br><br>
+          <h1>$31</h1><br><br>
+          <ul>
+            <li style="list-style: '✔';">
+              <h5>GENEL</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>PAZARLAMA</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>WEB SİTESİ</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>YAZILIM</h5>
+            </li><br>
+          </ul>
+          <div class="card-subtitle">Teslimat en geç:<br>25 Aralık Çarşamba </div>
+
+        </div>
+
+        <div class="card-footer text-center">
+          <button class="btn w-50 text-white" style="background-color: #614981;" id="choice1"
+            onclick="choicebutton1();">SEÇ</button>
+        </div>
+
+      </div>
+      <div class="col-sm-6 mx-auto card text-black bg-white" style="width: 18rem; margin-top: 10%;">
+
+        <div class="card-body" style="text-align: center;">
+          <h3 class="   
+          card-title opacity-50">PROFESYONEL</h3><br><br>
+          <h1>$40</h1><br><br>
+          <ul>
+            <li style="list-style: '✔';">
+              <h5>GENEL</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>PAZARLAMA</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>WEB SİTESİ</h5>
+            </li><br>
+            <li style="list-style: '✔';">
+              <h5>YAZILIM</h5>
+            </li>
+          </ul>
+          <div class="card-subtitle"><br>Teslimat en geç:<br>25 Aralık Çarşamba </div><br>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn w-50 text-white" style="background-color: #614981;" id="choice2"
+            onclick="choicebutton2();">SEÇ</button>
+        </div>
+
+      </div>
+
+      <div class="form-check col-sm-12 mt-3 text-center">
+        <input type="checkbox" name="options"  class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+        <label class="btn bg-danger text-white" onclick="checkfast()" name="31" id="btn2" for="btn-check-2-outlined">Hızlı Teslimat($49.99)</label>
+      </div>
+      </div>
+    
+
+    <div class="col-sm-10 text-end mb-3 mt-2 d-none" id="btnnext">
+      <button class="btn text-white" id="btn" onclick="divHidden6(),addfastcheck();" style="background-color:#493268">Sonraki adım</button>
+    </div>
+
+
+
+    <div class="row d-none mt-5 mt-5" id="level_3">
+      <div class="col-sm-6 mt-5 border-bottom pb-5 border-5" id="info">
+        <h1 class="text-center opacity-75" style="color:#493268">Alıcı bilgisi</h1>
+        <br>
+        <div class="input-group">
+          <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;">İsim & Soyisim:</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <br>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;" id="addon-wrapping">tel:</span>
+          <input type="text" class="form-control" placeholder="Örnek:05330001122" aria-label="Username"
+            aria-describedby="addon-wrapping">
+        </div><br>
+        <div class="input-group mb-3">
+          <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;">E-mail:</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;">@</span>
+          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div> <br>
+        <div class="input-group">
+          <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;">Not bırakın:</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        
+      </div>
+      <div class="col-sm-6 mt-5 border-bottom border-5" id="fee">
+        <h1 class="text-center  opacity-75" style="color:#493268">Ücret</h1><br>
+        <div class="table-responsive-sm">
+          <table class="table">
+            <caption><button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+              ÜCRETLENDİRME TABLOSU
+            </button>
+            
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">ÜCRETLENDİRME TABLOSU</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <h5>İngilizce -> Almanca : 0.50$ <br>
+                      İngilizce -> İtalyanca : 0.80$ <br>
+                      İngilizce -> Fransızca : 0.75$ <br>
+                  <br><br>
+
+                      Almanca -> İngilizce : 0.50$ <br>
+                      Almanca -> İtalyanca : 0.90$ <br>
+                      Almanca -> Fransızca : 0.70$ <br>
+                      <br><br>
+                  
+                  
+                  
+                  </h5>
+                </div>
+              </div>
+            </div></caption>
+            <thead>
+              <tr>
+                <th scope="col">METİN DİLİ:</th>
+                <th scope="col" id="lng1"> </th>
+               
+              </tr>
+              <tr>
+                <th scope="col">ÇEVRİLECEK DİL:</th>
+                <th scope="col" id="lng2"></th>
+                
+              </tr>
+              <tr>
+                <th scope="col">KELİME BAŞINA ÜCRET:</th>
+                <th scope="col" id="percount"></th>
+          
+              </tr>
+              <tr>
+                <th scope="col">KELİME SAYISI:</th>
+                <th scope="col" id="wordcount"></th>
+               
+              </tr>
+              <tr>
+                <th scope="col">PAKET:</th>
+                <th scope="col" id="package" class="text-secondary">PAKET SEÇİNİZ</th>
+               
+              </tr>
+              <tr>
+                <th scope="col">HIZLI TESLİMAT:</th>
+                <th scope="col" class="text-danger" id="checkfast1">Yok</th>
+               
+              </tr>
+              <tr>
+                <th scope="col">TOPLAM:</th>
+                <th scope="col" class="text-primary" id="total1"></th>
+               
+              </tr>
+
+            </thead>
+          </table>
+        </div>
+      </div>
+    
+      <div class="col-sm-12 mt-5  text-center" id="prcselect">
+        <h1><select class="form-select w-50 mx-auto text-center mb-5" aria-label="Default select example">
+          <option selected>ÖDEME YÖNTEMİ</option>
+          <option value="1" id="option1" onclick="payingchange(option1);">Kredi Kart</option>
+          <option value="2" id="option2" onclick="payingchange(option2);">Havale/İban</option>
+          <option value="3" id="option3">Öpücük</option>
+        </select></h1>
+        
+          <div class="row mt-5 d-none" id="credit">
+          <div class="col-sm-6 mx-auto">
+          <div class="card">
+          <div class="card-header text-white" style="background-color:#493268;">
+          <strong>Kredi Kartı</strong>
+          <br>
+          <small>Kart bilgilerini giriniz</small>
+          </div>
+          <div class="card-body">
+          <div class="row">
+          <div class="col-sm-12">
+          <div class="form-group">
+              
+          
+              
+          <label for="name">Kart adı</label>
+          <input class="form-control" id="name" type="text" placeholder="Enter your name">
+          </div>
+          </div>
+          </div>
+          
+          <div class="row">
+          <div class="col-sm-12">
+          <div class="form-group">
+          <label for="ccnumber">Kart Numarası</label>
+          
+          
+          <div class="input-group">
+          <input class="form-control" type="text" placeholder="0000 0000 0000 0000" autocomplete="email">
+          <div class="input-group-append">
+          
+          </div>
+          </div> 
+          </div>
+          </div>
+          </div>
+          
+          <div class="row">
+          <div class="form-group col-sm-4">
+          <label for="ccmonth">Ay</label>
+          <select class="form-control" id="ccmonth">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          </select>
+          </div>
+          <div class="form-group col-sm-4">
+          <label for="ccyear">Yıl</label>
+          <select class="form-control" id="ccyear">
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          </select>
+          </div>
+          <div class="col-sm-4">
+          <div class="form-group">
+          <label for="cvv">CVV/CVC</label>
+          <input class="form-control" id="cvv" type="text" placeholder="123">
+          </div>
+          </div>
+          </div>
+          
+          </div>
+          <div class="card-footer" style="background-color: #493268" >
+          <button class="btn btn-sm btn-success float-right" type="submit">
+          <i class="mdi mdi-gamepad-circle"></i>Devam</button>
+          <button class="btn btn-sm btn-danger" type="reset">
+          <i class="mdi mdi-lock-reset"></i>Temizle</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="row d-none" id="ibanselect">
+          <div class="form-check">
+            <input class="btn-check" autocomplete="off" type="radio" name="options" onclick="ibanchange(flexRadioDefault1);" id="flexRadioDefault1">
+            <label class="btn btn1" for="flexRadioDefault1" id="btn"> Ziraat Bankası</label>
+             </div>
+          <div class="form-check">
+            <input class="btn-check" type="radio" name="options" onclick="ibanchange(flexRadioDefault2);" id="flexRadioDefault2" checked>
+            <label class="btn btn2" for="flexRadioDefault2" id="btn">
+             Garanti Bankası
+            </label>
+            
+
+          </div>
+            <div class="form-check">
+              <input class="btn-check" autocomplete="off" type="radio" name="options" onclick="ibanchange(flexRadioDefault3);" id="flexRadioDefault3" checked>
+              <label class="btn btn3" for="flexRadioDefault3" id="btn">
+               Yapı Kredi Bankası
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="btn-check" autocomplete="off"  type="radio" name="options" onclick="ibanchange(flexRadioDefault4);" id="flexRadioDefault4" checked>
+              <label class="btn btn4" for="flexRadioDefault4" id="btn">
+               İNG Bank
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="btn-check" autocomplete="off"  type="radio" name="options" onclick="ibanchange(flexRadioDefault5);" id="flexRadioDefault5" checked>
+              <label class="btn btn5" for="flexRadioDefault5" id="btn">
+               Asya Bank
+              </label>
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <span class="input-group-text text-white opacity-75" style="background-color:#493268 ;" id="basic-addon1">İBAN</span>
+              <input class="form-control" type="text" value="TR000002300032402023400" aria-label="readonly input example" id="iban" readonly>
+            </div>
+            
+            
+          </div>
+      </div>
+
+
+    </div>
+    </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer font-small blue" style="background-color: #493268;margin-top: 200px;">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      <h6 style="line-height: 20px; color: white;">Copyright <i class="fa-solid fa-copyright"></i> Online Çeviri
+        2022
+      </h6>
+      
+
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <script src="remastered.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
