@@ -10,7 +10,7 @@
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <link rel="icon" href="language-solid.svg" type="image/icon type">
   <script src="https://kit.fontawesome.com/ee2593d4dd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="remastered1.css">
 </head>
 
 <body style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ">
@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand pb-3 sticky-top" style="background-color:  #493268;">
     <div class="container-fluid mt-2">
       <a class="navbar-brand d-flex justify-content-start" onclick="openMainpage();" type="button">
-        <h6 class="text-white"><i class="fa-solid fa-language" style=" margin-right: 20px;"></i>ONLİNE ÇEVİRİ</h6>
+        <h4 class="text-white"><i class="fa-solid fa-language" style=" margin-right: 20px;"></i>ONLİNE ÇEVİRİ</h4>
       </a>
       <div class="d-flex justify-content-end">
         <a class="navbar-brand" href="#">
@@ -129,17 +129,17 @@
 
   <div class="container mt-5 pb-3 d-none" id="transactions">
     <div class="row" >
-      <div id="div1" type="button" onclick="openlevel1() " class="col-sm-4 text-center text-white opacity-100" style="background-color:#493268;"><br>
+      <div id="div1"  class="col-sm-4 text-center text-white opacity-100" style="background-color:#493268;"><br>
         <h2>1</h2><br>
         <h4>YÜKLE</h4><br>
         <h6>Yüklemek istediğiniz dosyayı yükleyiniz</h6>
       </div>
-      <div id="div2" type="button" onclick="openlevel2()" class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
+      <div id="div2"  class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
         <h2>2</h2><br>
         <h4>FİYATLANDIRMA</h4><br>
         <h6>Anında fiyat ve teslim bilgisi alın</h6>
       </div>
-      <div id="div3" type="button" onclick="openlevel3(),addfastcheck();" class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
+      <div id="div3"  class="col-sm-4 text-center text-white opacity-50" style="background-color:#493268;"><br>
         <h2>3</h2><br>
         <h4>ÖDEME</h4><br>
         <h6>Ödemenizi tamamlayın hemen başlayalım</h6>
@@ -156,7 +156,7 @@
 
     <div class="row mb-3 d-none" id="level_1">
       <div class="col-6 mx-auto">
-        <select id="opt1" class="form-select w-100" onclick="selectlng(),controllang();"   aria-label="Default select example">
+        <select id="opt1" class="form-select w-100" onclick="controllang();"   aria-label="Default select example">
           <option selected>Metin dili</option>
           <option value="1">İngilizce</option>
           <option value="2">Almanca</option>
@@ -250,7 +250,7 @@
     
 
     <div class="col-sm-10 text-end mb-3 mt-2 d-none" id="btnnext">
-      <button class="btn text-white" id="btn" onclick="divHidden6(),addfastcheck();" style="background-color:#493268">Sonraki adım</button>
+      <button class="btn text-white" id="btn" onclick="divHidden6(),addfastcheck(),selectlng()" style="background-color:#493268">Sonraki adım</button>
     </div>
 
 
@@ -523,7 +523,7 @@
     <!-- Copyright -->
 
   </footer>
-  <script src="style.js"></script>
+  <script src="remastered.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
