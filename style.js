@@ -176,7 +176,7 @@ function payingchange(b) {
         document.getElementById("ibanselect").classList.add("d-none");
 
 
-    } else if (b == document.getElementById("option2")) {
+    } else if (b.value == document.getElementById("option2").value) {
 
         document.getElementById("credit").classList.add("d-none");
         document.getElementById("ibanselect").classList.remove("d-none");
