@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ">
+<body class="img-fluid" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ">
 
   <nav class="navbar navbar-expand pb-3 sticky-top" style="background-color:  #493268;">
     <div class="container-fluid mt-2">
@@ -127,7 +127,7 @@
 
 
 
-  <div class="container mt-5 pb-3 d-none" id="transactions">
+  <div class="container mt-5 pb-3 d-none " id="transactions" style="border:solid;border-style: dashed;border-color: #493268;">
     <div class="row" >
       <div id="div1"  class="col-sm-4 text-center text-white opacity-100" style="background-color:#493268;"><br>
         <h2>1</h2><br>
@@ -155,27 +155,30 @@
     </div>
 
     <div class="row mb-3 d-none" id="level_1">
-      <div class="col-6 mx-auto">
-        <select id="opt1" class="form-select w-100"   aria-label="Default select example">
+      <div class="col-6 mx-auto ">
+        <div class="col-sm-6 mx-auto">
+        <select id="opt1" class="form-select w-75" aria-label="Default select example">
           <option selected>Metin dili</option>
           <option value="1">İngilizce</option>
           <option value="2">Almanca</option>
           <option value="3">Fransızca</option>
           <option value="4">İtalyanca</option>
         </select></div>
+      </div>
       <div class="col-6 mx-auto">
-        <select id="opt2" class="form-select w-100" aria-label="Default select example">
+        <div class="col-sm-6 mx-auto">
+        <select id="opt2" class="form-select w-75" aria-label="Default select example">
           <option selected>Çevrilecek dil</option>
           <option value="1">İngilizce</option>
           <option value="2">Almanca</option>
           <option value="3">Fransızca</option>
           <option value="4">İtalyanca</option>
-        </select></div>
+        </select></div></div>
 
     </div>
     <div class="row mt-5 mb-2 d-none" id="btn1">
       <div class="col-sm-12 text-end">
-        <button type="button" onclick="divHidden5();" id="btn" class="btn text-white" style="background-color:#493268">Sonraki
+        <button type="button" onclick="selectlng(),selectlng2(),controllang(),querying();" id="btn" class="btn text-white" style="background-color:#493268">Sonraki
           adım</button>
       </div>
     </div>
@@ -250,7 +253,7 @@
     
 
     <div class="col-sm-10 text-end mb-3 mt-2 d-none" id="btnnext">
-      <button class="btn text-white" id="btn" onclick="divHidden6(),addfastcheck(),selectlng(),selectlng2(),controllang();" style="background-color:#493268">Sonraki adım</button>
+      <button class="btn text-white" id="btn" onclick="addfastcheck(),querying2();" style="background-color:#493268">Sonraki adım</button>
     </div>
 
 
@@ -336,7 +339,7 @@
               </tr>
               <tr>
                 <th scope="col">PAKET:</th>
-                <th scope="col" id="package" class="text-secondary">PAKET SEÇİNİZ</th>
+                <th scope="col" id="package" class="text-secondary"></th>
                
               </tr>
               <tr>
@@ -355,11 +358,11 @@
         </div>
       </div>
     
-      <div class="col-sm-12 mt-5  text-center" id="prcselect">
-        <h1><select class="form-select w-50 mx-auto text-center mb-5" id="selecting" onclick="payingchange(selecting);" aria-label="Default select example">
-          <option selected>ÖDEME YÖNTEMİ</option>
-          <option value="1" id="option1">Kredi Kart</option>
-          <option value="2" id="option2">Havale/İban</option>
+      <div class="col-sm-12 mt-5  text-center" id="prcselect" >
+        <h1><select class="form-select w-50 mx-auto text-center mb-5" id="selecting" onclick="payingchange(selecting);"  aria-label="Default select example" >
+          <option selected >ÖDEME YÖNTEMİ</option>
+          <option value="1" id="option1" >Kredi Kart</option>
+          <option value="2" id="option2" >Havale/İban</option>
           <option value="3" id="option3">Öpücük</option>
         </select></h1>
         
@@ -513,7 +516,7 @@
   <footer class="page-footer font-small blue" style="background-color: #493268;margin-top: 200px;">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
+    <div class="footer-copyright text-center mt-5 py-3">
       <h6 style="line-height: 20px; color: white;">Copyright <i class="fa-solid fa-copyright"></i> Online Çeviri
         2022
       </h6>

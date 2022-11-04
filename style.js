@@ -49,24 +49,9 @@ function divHidden4() {
 
 }
 
-function divHidden5() {
 
 
-    document.getElementById("upload").classList.add("d-none", );
-    document.getElementById("level_1").classList.add("d-none");
-    document.getElementById("btn1").classList.add("d-none");
-    document.getElementById("level_2").classList.remove("d-none");
-    document.getElementById("btnnext").classList.remove("d-none");
-    document.getElementById("div1").classList.add("opacity-50");
-    document.getElementById("div1").classList.remove("opacity-100")
-    document.getElementById("div2").classList.remove("opacity-50");
-    document.getElementById("div2").classList.add("opacity-100");
-
-
-}
-
-
-function addfastcheck(){
+function addfastcheck() {
     if (document.getElementById("package").innerText == "PROFESYONEL" && document.getElementById("btn2").classList.contains("bg-danger")) {
         document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * Number(document.getElementById("percount").innerText) + 40;
     } else if (document.getElementById("package").innerText == "PROFESYONEL" && document.getElementById("btn2").classList.contains("bg-success")) {
@@ -82,7 +67,7 @@ function addfastcheck(){
 }
 
 function divHidden6() {
-   
+
 
     document.getElementById("level_2").classList.add("d-none");
     document.getElementById("btnnext").classList.add("d-none");
@@ -124,12 +109,14 @@ function openContact1() {
 }
 
 
+
 document.getElementById('inputGroupFile02')
     .addEventListener('change', function () {
         const searching = "";
         var fr = new FileReader();
         fr.onload = function () {
             let reading = fr.result
+
 
             reading = reading.split('.').join('');
             reading = reading.split(' ');
@@ -142,6 +129,8 @@ document.getElementById('inputGroupFile02')
         }
 
         fr.readAsText(this.files[0]);
+
+
 
     })
 
@@ -238,23 +227,23 @@ function openlevel3() {
 function controllang() {
 
     if (opt1.value == "1" && opt2.value == "2") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.5;
+
         document.getElementById("percount").innerText = "0.5";
     } else if (opt1.value == "1" && opt2.value == "3") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.8;
+
         document.getElementById("percount").innerText = "0.8";
     } else if (opt1.value == "1" && opt2.value == "4") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.75;
+
         document.getElementById("percount").innerText = "0.75";
     } else if (opt1.value == "2" && opt2.value == "1") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.5;
+
         document.getElementById("percount").innerText = "0.5";
     } else if (opt1.value == "2" && opt2.value == "3") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.9;
+
         document.getElementById("percount").innerText = "0.9";
 
     } else if (opt1.value == "2" && opt2.value == "4") {
-        document.getElementById("total1").innerText = Number(document.getElementById("wordcount").innerText) * 0.7;
+
         document.getElementById("percount").innerText = "0.7";
 
     }
@@ -323,4 +312,50 @@ function selectlng2() {
     }
 
 
+}
+
+function divHidden5() {
+
+
+    document.getElementById("upload").classList.add("d-none", );
+    document.getElementById("level_1").classList.add("d-none");
+    document.getElementById("btn1").classList.add("d-none");
+    document.getElementById("level_2").classList.remove("d-none");
+    document.getElementById("btnnext").classList.remove("d-none");
+    document.getElementById("div1").classList.add("opacity-50");
+    document.getElementById("div1").classList.remove("opacity-100")
+    document.getElementById("div2").classList.remove("opacity-50");
+    document.getElementById("div2").classList.add("opacity-100");
+
+
+}
+
+
+function querying() {
+    const fake_path = document.getElementById('inputGroupFile02').value
+    filename = fake_path.split("\\").pop()
+    filename = filename.split(".").join(" ")
+    if (document.getElementById("percount").innerText == "" || filename.includes("txt") == false || document.getElementById("opt1").value == document.getElementById("opt2").value || document.getElementById("wordcount").innerText == "" || document.getElementById("opt1").value == "Metin dili" || document.getElementById("opt2").value == "Çevrilecek dil") {
+
+
+        if (filename.includes("txt") == false) {
+            alert("sadece txt dosyası yükleyiniz!")
+        } else if (document.getElementById("opt1").value == document.getElementById("opt2").value) {
+            alert("Diller aynı olamaz");
+        } else {
+            alert("Tüm alanları doldurunuz!");
+        }
+
+    } else {
+        divHidden5();
+    }
+
+}
+
+function querying2() {
+    if (document.getElementById("package").innerText == "") {
+        alert("Paket seçiniz!")
+    } else {
+        divHidden6();
+    }
 }
