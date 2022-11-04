@@ -331,10 +331,12 @@ function divHidden5() {
 }
 
 
+
 function querying() {
     const fake_path = document.getElementById('inputGroupFile02').value
     filename = fake_path.split("\\").pop()
     filename = filename.split(".").join(" ")
+    
     if (document.getElementById("percount").innerText == "" || filename.includes("txt") == false || document.getElementById("opt1").value == document.getElementById("opt2").value || document.getElementById("wordcount").innerText == "" || document.getElementById("opt1").value == "Metin dili" || document.getElementById("opt2").value == "Çevrilecek dil") {
 
 
